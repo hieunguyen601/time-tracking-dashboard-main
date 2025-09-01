@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Time tracking dashboard</title>
+  </head>
+  <body>
+    <main class="container">
+      <aside class="user-information">
+        <div class="user">
+          <img
+            class="user-image"
+            src="./images/image-jeremy.png"
+            alt="Photo of Jeremy Robson"
+          />
+          <p class="report-for">Report for</p>
+          <h1 class="user-name">Jeremy Robson</h1>
+        </div>
+
+        <nav class="filters" aria-label="Timeframe filters (static)">
+          <button class="button" id="daily">Daily</button>
+          <button class="button active" id="weekly" aria-current="page">Weekly</button>
+          <button class="button" id="monthly">Monthly</button>
+        </nav>
+      </aside>
+
+      <section class="time-tracking" aria-label="Time tracking cards">
+        <article class="activity work">
+          <div class="activity-bg">
+            <img src="./images/icon-work.svg" alt="" aria-hidden="true" />
+          </div>
+          <div class="activity-content">
+            <header class="row">
+              <h2>Work</h2>
+              <button class="menu" aria-label="More options">•••</button>
+            </header>
+            <p class="hours">32hrs</p>
+            <p class="previous">Last Week - 36hrs</p>
+          </div>
+        </article>
+
+        <article class="activity play">
+          <div class="activity-bg">
+            <img src="./images/icon-play.svg" alt="" aria-hidden="true" />
+          </div>
+          <div class="activity-content">
+            <header class="row">
+              <h2>Play</h2>
+              <button class="menu" aria-label="More options">•••</button>
+            </header>
+            <p class="hours">10hrs</p>
+            <p class="previous">Last Week - 8hrs</p>
+          </div>
+        </article>
+
+        <article class="activity study">
+          <div class="activity-bg">
+            <img src="./images/icon-study.svg" alt="" aria-hidden="true" />
+          </div>
+          <div class="activity-content">
+            <header class="row">
+              <h2>Study</h2>
+              <button class="menu" aria-label="More options">•••</button>
+            </header>
+            <p class="hours">4hrs</p>
+            <p class="previous">Last Week - 7hrs</p>
+          </div>
+        </article>
+
+        <article class="activity exercise">
+          <div class="activity-bg">
+            <img src="./images/icon-exercise.svg" alt="" aria-hidden="true" />
+          </div>
+          <div class="activity-content">
+            <header class="row">
+              <h2>Exercise</h2>
+              <button class="menu" aria-label="More options">•••</button>
+            </header>
+            <p class="hours">4hrs</p>
+            <p class="previous">Last Week - 5hrs</p>
+          </div>
+        </article>
+
+        <article class="activity social">
+          <div class="activity-bg">
+            <img src="./images/icon-social.svg" alt="" aria-hidden="true" />
+          </div>
+          <div class="activity-content">
+            <header class="row">
+              <h2>Social</h2>
+              <button class="menu" aria-label="More options">•••</button>
+            </header>
+            <p class="hours">5hrs</p>
+            <p class="previous">Last Week - 10hrs</p>
+          </div>
+        </article>
+
+        <article class="activity self-care">
+          <div class="activity-bg">
+            <img src="./images/icon-self-care.svg" alt="" aria-hidden="true" />
+          </div>
+          <div class="activity-content">
+            <header class="row">
+              <h2>Self Care</h2>
+              <button class="menu" aria-label="More options">•••</button>
+            </header>
+            <p class="hours">2hrs</p>
+            <p class="previous">Last Week - 2hrs</p>
+          </div>
+        </article>
+      </section>
+    </main>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
